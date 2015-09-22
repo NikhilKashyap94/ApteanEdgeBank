@@ -78,6 +78,7 @@ namespace ApteanEdgeBank
         private void Create_New_Customer_Load(object sender, EventArgs e)
         {
             monthCalendar1.Hide();
+            button1.Hide();
         }
 
         private void dateOfBirthBox_TextChanged(object sender, EventArgs e)
@@ -142,6 +143,26 @@ namespace ApteanEdgeBank
                 MessageBox.Show("Please Enter valid 10 digit number");
             }
 
+        }
+
+        private void dateOfBirthBox_TabIndexChanged(object sender, EventArgs e)
+        {
+            monthCalendar1.Show();
+        }
+
+        private void dateOfBirthBox_CursorChanged(object sender, EventArgs e)
+        {
+            monthCalendar1.Show();
+        }
+
+        private void dateOfBirthBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            monthCalendar1.Show();
+        }
+
+        private void dateOfBirthBox_Enter(object sender, EventArgs e)
+        {
+            monthCalendar1.Show();
         }
     }
 }
